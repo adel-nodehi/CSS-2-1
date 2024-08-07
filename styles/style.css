@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.content {
+  background-color: #26c6da;
+  padding: 10px 20px;
+
+  width: 600px;
+  height: 200px;
+
+  overflow: auto;
+}
