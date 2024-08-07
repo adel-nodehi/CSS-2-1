@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+}
+
 body {
+  font-family: "Poppins", sans-serif;
   background-color: #ccc;
+}
+
+p:last-child {
+  /* color: blue; */
 }
 
 .container {
@@ -22,4 +30,26 @@ body {
   height: 200px;
 
   overflow: auto;
+}
+
+.accordion {
+  margin: 40px 0;
+  padding: 10px 20px;
+
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.accordion__input:checked + .accordion__content {
+  color: red;
+}
+
+.accordion__content {
+}
+
+.list {
+}
+
+.list__item:last-child {
+  color: red;
 }
