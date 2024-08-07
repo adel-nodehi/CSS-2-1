@@ -55,3 +55,22 @@ p:last-child {
   height: 10px;
   background-color: red;
 }
+
+.discount {
+  margin-top: 10px;
+  display: inline-block;
+
+  position: relative;
+}
+
+.discount::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8px;
+}
