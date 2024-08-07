@@ -28,13 +28,19 @@ p:last-child {
 }
 
 .content {
-  background-color: #26c6da;
+  background-color: rgba(38, 198, 218, 1);
   padding: 10px 20px;
 
   width: 600px;
   height: 200px;
 
   overflow: auto;
+
+  opacity: 0.6;
+}
+
+.content:hover {
+  opacity: 1;
 }
 
 .content::selection {
