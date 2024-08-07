@@ -56,6 +56,10 @@ p:last-child {
   background-color: red;
 }
 
+.list__item::marker {
+  content: "🎂";
+}
+
 .discount {
   margin-top: 10px;
   display: inline-block;
