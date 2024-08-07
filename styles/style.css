@@ -7,6 +7,11 @@
 :root {
 }
 
+::selection {
+  background-color: #fff176;
+  color: #d50000;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ccc;
@@ -30,6 +35,10 @@ p:last-child {
   height: 200px;
 
   overflow: auto;
+}
+
+.content::selection {
+  background-color: black;
 }
 
 .accordion {
