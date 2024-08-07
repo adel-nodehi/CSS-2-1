@@ -50,6 +50,6 @@ p:last-child {
 .list {
 }
 
-.list__item:nth-child(even) {
+.list__item:not(:hover) {
   color: red;
 }
