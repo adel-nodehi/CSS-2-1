@@ -24,7 +24,8 @@ p:last-child {
 }
 
 .container {
-  max-width: 992px;
+  background-color: #999;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
 }
@@ -174,4 +175,34 @@ Acoorion end
   width: 500px;
   height: 200px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    background-color: red;
+  }
+
+  .content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    background-color: rgb(0, 255, 60);
+  }
+
+  .accordion {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .container {
+    background-color: rgb(55, 0, 255);
+  }
+
+  .box {
+    display: none;
+  }
 }
