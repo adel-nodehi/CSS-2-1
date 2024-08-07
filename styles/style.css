@@ -5,6 +5,8 @@
 }
 
 :root {
+  --main-color: #6a00ff;
+  --dark-shadow: 0 0 14px #000;
 }
 
 ::selection {
@@ -44,6 +46,8 @@ p:last-child {
   overflow: auto;
 
   opacity: 0.6;
+
+  color: var(--main-color);
 }
 
 .content:hover {
@@ -69,6 +73,8 @@ Acoorion start
 .accordion__title {
   display: inline-block;
   margin-bottom: 10px;
+
+  color: var(--main-color);
 }
 
 .accordion__icon {
@@ -141,7 +147,7 @@ Acoorion end
   height: 200px;
   margin-top: 20px;
   margin-bottom: 40px;
-  background-color: #00c853;
+  background-color: var(--main-color);
   box-shadow: 0 20px 14px #000000a5;
 
   transition: all 0.2s ease-in 20ms;
