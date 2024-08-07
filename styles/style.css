@@ -50,6 +50,6 @@ p:last-child {
 .list {
 }
 
-.list__item:last-child {
+.list__item:nth-child(even) {
   color: red;
 }
