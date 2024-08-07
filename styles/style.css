@@ -50,6 +50,8 @@ p:last-child {
 .list {
 }
 
-.list__item:not(:hover) {
-  color: red;
+.list__item:empty {
+  width: 10px;
+  height: 10px;
+  background-color: red;
 }
