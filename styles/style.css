@@ -71,11 +71,24 @@ Acoorion start
   margin-bottom: 10px;
 }
 
+.accordion__icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+
+  transition: all 0.2s ease-in;
+}
+
+.accordion__input:checked + .accordion__title > .accordion__icon {
+  transform: rotate(90deg);
+}
+
 .accordion__input {
   display: none;
 }
 
-.accordion__input:checked + .accordion__content {
+.accordion__input:checked ~ .accordion__content {
   height: 50px;
 }
 
@@ -127,10 +140,14 @@ Acoorion end
   width: 200px;
   height: 200px;
   margin-top: 20px;
+  margin-bottom: 40px;
   background-color: #00c853;
-  transition: background-color 0.2s ease-in 20ms;
+  box-shadow: 0 20px 14px #000000a5;
+
+  transition: all 0.2s ease-in 20ms;
 }
 
 .box:hover {
   background-color: #01579b;
+  transform: scale(0.8) rotate(40deg);
 }
